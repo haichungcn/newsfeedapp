@@ -55,7 +55,7 @@ function renderNews(articles) {
         return `
         <div class="card card-shadow p-2 ml-1 mr-0 row mb-3 d-flex flex-row container-fluid">
             <div class="col-12 col-md-3 mr-0 mr-md-4 card-img-left p-0">
-                <img width="280" height="180" class="newsThumbnail rounded mx-auto d-block img-fluid" alt="News Thumbnail" src="${article.urlToImage == null ? "#" : article.url}" draggable="false"></a>
+                <img width="280" height="180" class="newsThumbnail rounded mx-auto d-block img-fluid" alt="News Thumbnail" src="${article.urlToImage || 'https://aliceasmartialarts.com/wp-content/uploads/2017/04/default-image.jpg'}" draggable="false"></a>
             </div>
             <div class="col-12 col-md-8"> 
                 <div class="row text-left">
